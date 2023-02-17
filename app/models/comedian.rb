@@ -5,7 +5,7 @@ class Comedian < ApplicationRecord
   validates_presence_of :age
 
   def self.average_age
-    "#{average(:age).round(2)} Years"
+    average(:age)
   end
 
   def average_special_runtime
